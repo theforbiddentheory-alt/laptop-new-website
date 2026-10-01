@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>old version</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link rel="prec
+onnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><i class="fa-solid fa-shield-halved"></i> Tested devices</span>
+    <span><i class="fa-solid fa-truck-fast"></i> Delivery available</span>
+    <span><i class="fa-solid fa-store"></i> Pickup in Multan</span>
+    <a href="tel:03180611884"><i class="fa-solid fa-phone"></i> 0318 0611884</a>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <span class="logo-icon"><i class="fa-solid fa-laptop"></i></span>
+      <span>
+        <b>Laptop Generation</b>
+        <small>MULTAN</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav">
+      <div class="nav-dropdown">
+        <button>Shop by Brand <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown mega">
+          <div>
+            <strong>Popular Brands</strong>
+            <a href="#brands">Apple</a>
+            <a href="#brands">Dell</a>
+            <a href="#brands">HP</a>
+            <a href="#brands">Lenovo</a>
+          </div>
+          <div>
+            <strong>More Brands</strong>
+            <a href="#brands">Acer</a>
+            <a href="#brands">ASUS</a>
+            <a href="#brands">Microsoft</a>
+          </div>
+          <div class="menu-note">
+            <span>LOCAL PICKUP</span>
+            <b>Visit us in Multan Cantt.</b>
+            <small>Shop No. 1, Khan Plaza Outside.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button>Shop by Category <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown">
+          <a href="#categories">Business Laptops</a>
+          <a href="#categories">Gaming Laptops</a>
+          <a href="#categories">Student Laptops</a>
+          <a href="#categories">Premium Laptops</a>
+          <a href="#categories">Budget Laptops</a>
+        </div>
+      </div>
+
+      <a href="#inventory">Shop</a>
+      <a href="#accessories">Accessories</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a class="icon-btn desktop-user" href="#contact"><i class="fa-regular fa-user"></i></a>
+      <button class="icon-btn cart-btn" id="cartBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+      <button class="icon-btn mobile-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inventory">Shop</a>
+    <a href="#brands">Shop by Brand</a>
+    <a href="#categories">Shop by Category</a>
+    <a href="#accessories">Accessories</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow glow1"></div>
+    <div class="hero-glow glow2"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span></span> LAPTOP GENERATION MULTAN
+        </div>
+
+        <h1 id="heroTitle">
+          Laptops you can <em>actually trust.</em>
+        </h1>
+
+        <p id="heroText">
+          Tested devices, clear specifications and a better way to shop for your next laptop in Multan.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#inventory">
+            Browse Laptops <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a class="btn btn-light" href="#reviews">
+            Customer Reviews <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <span><i class="fa-solid fa-circle-check"></i> Tested & Checked</span>
+          <span><i class="fa-solid fa-location-dot"></i> Multan Cantt</span>
+          <span><i class="fa-solid fa-box"></i> Delivery Available</span>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="hero-card">
+          <div class="hero-image-wrap">
+            <img id="heroImage"
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=85"
+              alt="Laptop">
+            <div class="image-shade"></div>
+          </div>
+
+          <div class="hero-card-bottom">
+            <div>
+              <span id="heroKicker">FEATURED PICK</span>
+              <h3 id="heroCardTitle">Business-ready. Everyday-fast.</h3>
+              <p id="heroCardMeta">Premium productivity laptops from trusted brands.</p>
+            </div>
+
+            <a href="#inventory" class="round-arrow">
+              <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-controls">
+          <button class="slider-arrow" id="heroPrev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="dots" id="heroDots"></div>
+
+          <button class="slider-arrow" id="heroNext">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust-section">
+    <div class="container trust-grid">
+
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-shield-heart"></i></div>
+        <div>
+          <h3>Checked Before Listing</h3>
+          <p>Important device details are checked before listing.</p>
+        </div>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div>
+          <h3>Delivery Available</h3>
+          <p>Delivery options are available depending on location.</p>
+        </div>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-store"></i></div>
+        <div>
+          <h3>Pickup in Multan</h3>
+          <p>Visit our store in Multan Cantt for pickup.</p>
+        </div>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h3>Real Support</h3>
+          <p>Get practical help before making your choice.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INVENTORY -->
+  <section class="section" id="inventory">
+    <div class="container">
+
+      <div class="section-heading split">
+        <div>
+          <span class="eyebrow dark">LATEST INVENTORY</span>
+          <h2>Fresh finds, ready for your desk.</h2>
+          <p>Explore a rotating selection of laptops across business, student and premium categories.</p>
+        </div>
+
+        <div class="heading-actions">
+          <button class="slider-arrow light" id="productPrev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <button class="slider-arrow light" id="productNext">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="products" id="products"></div>
+
+    </div>
+  </section>
+
+  <!-- BUDGET -->
+  <section class="budget-section">
+    <div class="container budget-grid">
+
+      <div class="budget-copy">
+        <span class="eyebrow light">FIND YOUR FIT</span>
+        <h2>A laptop for every kind of budget.</h2>
+        <p>Choose a budget and explore matching products instantly.</p>
+      </div>
+
+      <div class="budget-box">
+
+        <div class="budget-buttons" id="budgetButtons">
+          <button class="active" data-budget="all">All</button>
+          <button data-budget="under50">Under Rs. 50k</button>
+          <button data-budget="50to80">Rs. 50k–80k</button>
+          <button data-budget="80to120">Rs. 80k–120k</button>
+          <button data-budget="120plus">Rs. 120k+</button>
+        </div>
+
+        <div class="budget-products" id="budgetProducts"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow dark">SHOP BY NEED</span>
+        <h2>Find the laptop that fits your work.</h2>
+        <p>Choose your use case and start from the right place.</p>
+      </div>
+
+      <div class="category-grid">
+
+        <a class="category-card" href="#inventory">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80" alt="">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>01</span>
+            <h3>Business Laptops</h3>
+            <p>Reliable machines for serious everyday work.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a class="category-card" href="#inventory">
+          <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=1000&q=80" alt="">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>02</span>
+            <h3>Gaming Laptops</h3>
+            <p>Performance-focused options for gaming and creation.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a class="category-card" href="#inventory">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80" alt="">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>03</span>
+            <h3>Student Laptops</h3>
+            <p>Smart picks for classes, study and everyday use.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a class="category-card" href="#inventory">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=80" alt="">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>04</span>
+            <h3>Premium Laptops</h3>
+            <p>Refined designs with stronger performance.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="section brand-section" id="brands">
+    <div class="container">
+
+      <div class="section-heading centered">
+        <span class="eyebrow dark">PICK YOUR BRAND</span>
+        <h2>Shop the brands you already trust.</h2>
+        <p>Choose a brand and discover matching laptops.</p>
+      </div>
+
+      <div class="brand-grid">
+
+        <button class="brand-card" data-brand="Apple">
+          <span class="brand-logo"></span>
+          <strong>Apple</strong>
+          <small>MacBook collection</small>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="brand-card" data-brand="Dell">
+          <span class="brand-logo">D</span>
+          <strong>Dell</strong>
+          <small>Latitude & Inspiron</small>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="brand-card" data-brand="HP">
+          <span class="brand-logo">hp</span>
+          <strong>HP</strong>
+          <small>EliteBook & ProBook</small>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="brand-card" data-brand="Lenovo">
+          <span class="brand-logo">L</span>
+          <strong>Lenovo</strong>
+          <small>ThinkPad collection</small>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="brand-card" data-brand="ASUS">
+          <span class="brand-logo">A</span>
+          <strong>ASUS</strong>
+          <small>Everyday & performance</small>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="brand-card" data-brand="Acer">
+          <span class="brand-logo">A</span>
+          <strong>Acer</strong>
+          <small>Value-focused laptops</small>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESSORIES -->
+  <section class="section accessories-section" id="accessories">
+    <div class="container">
+
+      <div class="section-heading split">
+        <div>
+          <span class="eyebrow dark">COMPLETE YOUR SETUP</span>
+          <h2>Small upgrades. Big difference.</h2>
+          <p>A compact selection of useful accessories for your laptop setup.</p>
+        </div>
+      </div>
+
+      <div class="accessory-filters" id="accessoryFilters">
+        <button class="active" data-type="all">All</button>
+        <button data-type="mouse">Mice</button>
+        <button data-type="keyboard">Keyboards</button>
+        <button data-type="bag">Bags</button>
+        <button data-type="stand">Stands</button>
+      </div>
+
+      <div class="products accessory-products" id="accessoryProducts"></div>
+
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story-section">
+    <div class="container story-grid">
+
+      <div>
+        <span class="eyebrow dark">WHY LAPTOP GENERATION</span>
+        <h2>Buying a laptop should feel clear, not complicated.</h2>
+        <p>
+          See the important specifications, understand the condition and contact the store directly when you need help.
+        </p>
+
+        <a class="btn btn-primary" href="https://wa.me/923180611884" target="_blank">
+          Talk on WhatsApp <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="story-cards">
+
+        <div class="story-card">
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h3>Clear Specs</h3>
+          <p>CPU, generation, RAM and storage are easy to scan.</p>
+        </div>
+
+        <div class="story-card">
+          <i class="fa-solid fa-check-double"></i>
+          <h3>Tested Listings</h3>
+          <p>Product cards are built around a clear condition story.</p>
+        </div>
+
+        <div class="story-card">
+          <i class="fa-solid fa-route"></i>
+          <h3>Easy Pickup</h3>
+          <p>Find local store information before deciding.</p>
+        </div>
+
+        <div class="story-card">
+          <i class="fa-solid fa-comments"></i>
+          <h3>Human Help</h3>
+          <p>Talk directly when you need product guidance.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div>
+        <span class="eyebrow light">LAPTOP GENERATION MULTAN</span>
+        <h2>Tested in Multan.<br>Ready for your next move.</h2>
+        <p>Browse laptops, compare options and contact the store directly.</p>
+      </div>
+
+      <div class="cta-buttons">
+        <a class="btn white-btn" href="#inventory">
+          Browse Laptops <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a class="btn outline-white" href="tel:03180611884">
+          Call 0318 0611884
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container faq-grid">
+
+      <div>
+        <span class="eyebrow dark">FAQ</span>
+        <h2>Questions before you buy?</h2>
+        <p>Keep the useful answers close to the buying experience.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <button class="faq">
+          <span>Can I pick up my laptop from your Multan branch?</span>
+          <i class="fa-solid fa-plus"></i>
+          <div class="faq-answer">Yes. Pickup is available from Shop No. 1, Multan Cantt, Khan Plaza Outside.</div>
+        </button>
+
+        <button class="faq">
+          <span>Do you offer delivery outside Multan?</span>
+          <i class="fa-solid fa-plus"></i>
+          <div class="faq-answer">Delivery availability can be confirmed with the store for your city and product.</div>
+        </button>
+
+        <button class="faq">
+          <span>Are the laptops tested before sale?</span>
+          <i class="fa-solid fa-plus"></i>
+          <div class="faq-answer">The website is structured around tested inventory and clear product information.</div>
+        </button>
+
+        <button class="faq">
+          <span>Can I ask for specifications before ordering?</span>
+          <i class="fa-solid fa-plus"></i>
+          <div class="faq-answer">Yes. You can contact the store for additional specifications or product details.</div>
+        </button>
+
+        <button class="faq">
+          <span>Do you sell laptop accessories?</span>
+          <i class="fa-solid fa-plus"></i>
+          <div class="faq-answer">Yes. The website includes a compact accessories section.</div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+
+      <div class="section-heading centered">
+        <span class="eyebrow dark">CUSTOMER REVIEWS</span>
+        <h2>Real feedback should feel easy to find.</h2>
+        <p>These are demo cards and can later be replaced with verified reviews.</p>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“Clean selection and helpful guidance on specifications.”</p>
+          <strong>Hassan R.</strong>
+          <small>Multan</small>
+        </article>
+
+        <article class="review-card featured">
+          <div class="stars">★★★★★</div>
+          <p>“The pickup process was straightforward and simple.”</p>
+          <strong>Usman A.</strong>
+          <small>Multan Cantt</small>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“I liked being able to compare brands and use cases.”</p>
+          <strong>Ali S.</strong>
+          <small>Multan</small>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-box">
+
+      <div class="contact-left">
+        <span class="eyebrow dark">VISIT / CALL</span>
+        <h2>Let's find the right machine for you.</h2>
+        <p>Bring your budget, workload or study needs. We'll keep the conversation practical.</p>
+
+        <div class="contact-buttons">
+          <a class="btn btn-primary" href="tel:03180611884">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+
+          <a class="btn whatsapp-btn" href="https://wa.me/923180611884" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <a class="btn btn-light" target="_blank"
+             href="https://maps.google.com/?q=Khan+Plaza+Multan+Cantt">
+            <i class="fa-solid fa-location-dot"></i> Get Directions
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-details">
+
+        <div>
+          <i class="fa-solid fa-store"></i>
+          <span>Store</span>
+          <strong>Laptop Generation Multan</strong>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Address</span>
+          <strong>Shop No. 1, Multan Cantt, Khan Plaza Outside</strong>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <span>Phone</span>
+          <strong>0318 0611884</strong>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-clock"></i>
+          <span>Hours</span>
+          <strong>Opens at 11:00 AM</strong>
+        </div>
+
+      </div>
+
+      <div class="map-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <strong>Multan Cantt</strong>
+        <span>Google Maps area</span>
+        <a target="_blank" href="https://maps.google.com/?q=Khan+Plaza+Multan+Cantt">
+          Open Map <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <a class="logo" href="#home">
+        <span class="logo-icon"><i class="fa-solid fa-laptop"></i></span>
+        <span>
+          <b>Laptop Generation</b>
+          <small>MULTAN</small>
+        </span>
+      </a>
+
+      <p>Modern laptop shopping with clear information, tested devices and practical support.</p>
+
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/923180611884" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="#inventory">All Laptops</a>
+      <a href="#inventory">Latest Inventory</a>
+      <a href="#categories">Categories</a>
+      <a href="#accessories">Accessories</a>
+    </div>
+
+    <div>
+      <h4>Brands</h4>
+      <a href="#brands">Apple</a>
+      <a href="#brands">Dell</a>
+      <a href="#brands">HP</a>
+      <a href="#brands">Lenovo</a>
+      <a href="#brands">ASUS</a>
+    </div>
+
+    <div>
+      <h4>Help</h4>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact">Delivery</a>
+      <a href="#contact">Pickup</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>0318 0611884<br>Multan Cantt<br>Multan, Pakistan</p>
+      <a href="tel:03180611884">Call the store →</a>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© 2026 Laptop Generation Multan</span>
+    <span>Premium Laptop Store • Multan</span>
+  </div>
+</footer>
+
+<!-- SEARCH -->
+<div class="overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-top">
+      <strong>Search Inventory</strong>
+      <button id="searchClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="search-input">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input id="searchInput" type="text" placeholder="Search Dell, HP, MacBook, gaming...">
+    </div>
+
+    <div id="searchResults"></div>
+  </div>
+</div>
+
+<!-- CART -->
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-top">
+    <div>
+      <span>YOUR BAG</span>
+      <h3>Selected Products</h3>
+    </div>
+    <button id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <div class="empty-cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <p>Your bag is empty.</p>
+      <span>Add a product to preview the interaction.</span>
+    </div>
+  </div>
+
+  <div class="cart-bottom">
+    <div>
+      <span>Total</span>
+      <strong id="cartTotal">Rs. 0</strong>
+    </div>
+
+    <button class="btn btn-primary" id="checkoutBtn">
+      Continue <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+</aside>
+
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span>Added to bag</span>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
